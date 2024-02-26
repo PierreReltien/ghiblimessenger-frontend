@@ -11,7 +11,24 @@ import tweets from '../reducers/tweets';
 // redux-persist imports
 import { persistStore, persistReducer } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
-import storage from 'redux-persist/lib/storage';
+import createWebStorage from "redux-persist/lib/storage/createWebStorage";
+
+
+const createNoopStorage = () => {
+  return {
+      getItem() {
+          return Promise.resolve(null);
+      },
+      setItem(value) {
+          return Promise.resolve(value);
+      },
+      removeItem() {
+          return Promise.resolve();
+      },
+  };
+};
+
+const storage = typeof window !== "undefined" ? createWebStorage("local") : createNoopStorage();
 
 const reducers = combineReducers({ user, tweets });
 const persistConfig = {
