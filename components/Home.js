@@ -15,7 +15,7 @@ function Home() {
 
   // Redirect to /login if not logged in
   const router = useRouter();
-
+ 
   if (!user.token) {
     router.push('/login');
   }

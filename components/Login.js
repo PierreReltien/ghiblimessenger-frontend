@@ -41,7 +41,7 @@ function Login() {
       <div className={styles.rightSection}>
       <Image src="/totorologo2.png" alt="Logo" width={100} height={100} />
         <h2 className={styles.title}>Ghibli's Messenger <br></br></h2>
-        <h3>Join today</h3>
+        <h3 className={styles.subTitle}>Join today</h3>
         <div onClick={() => showSignUpModal()} className={styles.signUp}><a className={styles.signUpText}> Sign up</a></div>
         <p>Already have an account?</p>
         <div onClick={() => showSignInModal()} className={styles.signIn}><a className={styles.signUpText}> Sign in</a></div>

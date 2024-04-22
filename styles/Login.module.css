@@ -7,6 +7,7 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+  background-color: #172430;
 }
 
 .leftSection {
@@ -75,4 +76,23 @@
 
 .title {
   margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .leftSection, .rightSection {
+    width: 100%;
+    height: auto;
+  }
+
+.title {
+  font-size: 30px; /* Correction de la taille de la police pour les éléments h2 */
+}
+
+.subTitle {
+  font-size: 15px;
+}
 }
