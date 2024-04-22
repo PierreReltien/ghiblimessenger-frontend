@@ -43,7 +43,7 @@ function Login() {
         <h2 className={styles.title}>Ghibli's Messenger <br></br></h2>
         <h3 className={styles.subTitle}>Join today</h3>
         <div onClick={() => showSignUpModal()} className={styles.signUp}><a className={styles.signUpText}> Sign up</a></div>
-        <p>Already have an account?</p>
+        <h3 className={styles.subTitle}>Already have an account?/</h3>
         <div onClick={() => showSignInModal()} className={styles.signIn}><a className={styles.signUpText}> Sign in</a></div>
       </div>
 

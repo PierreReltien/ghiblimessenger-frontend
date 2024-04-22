@@ -75,7 +75,7 @@
 }
 
 .title {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -90,9 +90,11 @@
 
 .title {
   font-size: 30px; /* Correction de la taille de la police pour les éléments h2 */
+  padding : 0 0 30px 0;
 }
 
 .subTitle {
   font-size: 15px;
+  padding : 20px 0 0 0;
 }
 }

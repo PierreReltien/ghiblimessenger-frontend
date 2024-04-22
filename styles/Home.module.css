@@ -8,8 +8,6 @@
 }
 
 .container {
-  height: 100vh;
-  width: 100vw;
   display: flex;
   background-color: #172430;
 }
@@ -142,5 +140,52 @@
 
 .button:hover {
   background-color: #3384cf;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .leftSection, .middleSection, .rightSection {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .leftSection {
+    padding: 15px;
+  }
+  
+  .middleSection {
+    width: 100%;
+    border: none;
+  }
+  
+  .validateTweet {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .input {
+    width: 70%;
+  }
+  
+  .button {
+    width: 25%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .middleSection {
+    overflow: auto;
+  }
+}
+
+.validateTweet {
+  padding: 20px;
 }
 
